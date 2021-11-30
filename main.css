@@ -2,6 +2,12 @@ body {
 	background-color: rgb(211, 225, 235);
 }
 
+/* Images */
+img {
+        border: 5px dashed#ffffff;
+        border-radius: 5%;
+}
+
 /* Page Title */
 h1 {
 	font-weight: bold;
@@ -30,18 +36,21 @@ p {
 
 /* Projects Description */
 p2 {
-	margin: 0px;
-	padding: 0px;
+	color: #6600cc;
+	font-family: Georgia;
+        margin: 0px;
+        padding: 0px;
 }
 
+/* Projects Box */
 #Projects {
   background-color:  #fff8dc;
   border: 8px solid#fff700;
   border-radius: 15% 10%;
-  padding: 3%;
+  padding: 4%;
   margin: 2%;
-  animation: mymove 5s infinite;
+  animation: projectboxglow 5s infinite;
 }
-@keyframes mymove {
+@keyframes projectboxglow {
   50% {box-shadow: 4px 4px 4px #ff3503;}
 }
