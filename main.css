@@ -4,7 +4,7 @@ body {
 
 /* Images */
 img {
-        background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 70%);
+        border: 5px dashed#e1d9d1;
 }
 
 /* Page Title */
