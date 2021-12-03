@@ -1,25 +1,117 @@
 body {
-	background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 70%);
+    margin: 0%;
+    background: linear-gradient(80deg, #217c7e 30%, #e2e2e2 80%);
+}
+
+/* Navigation Bar Features */
+.navbar {
+    background: linear-gradient(150deg, #dd1f13 10%, #04a9ee 90%);
+    box-shadow: 0px -10px 5px 12px #000000;
+}
+.nav-link,
+.navbar-brand {
+    color: #ffffff;
+}
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 0px;
+    margin: 0% 5%;
+    display: inline-block;
+    position: relative;
+    opacity: 100%;
+}
+.nav-link:hover {
+  	color: #ffffff;
+    opacity: 70%;
+}
+.nav-link::before {
+    transition: 500ms;
+    height: 5%;
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+}
+.nav-link-fade-up::before {
+    width: 100%;
+    bottom: 20%;
+    opacity: 0%;
+}
+.nav-link-fade-up:hover::before {
+    bottom: 35%;
+    opacity: 100%;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Images */
 img {
-        border: 5px dashed#e1d9d1;
+    border: 5px dashed#e1d9d1;
 }
 
-/* Page Title */
-h1 {
+.Title {
+	border-radius: 50px;
+    border-style: solid;
+    border-color: #fff700;
+	padding: 8% 0%;
+	margin: 0%;
+}
+
+/* Introduction Heading */
+.Title h1 {
+    font-size: 50px;
 	font-weight: bold;
-	color: #ffffff;
+	color: #aa6b39;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 0px;
 	padding: 2%;
 }
 
-/* Projects Title */
-h2 {
+/* Introduction Text */
+.Title p {
+	margin: 0% 10%;
+	padding: 0% 10%;
+   	color: #000000;
+    text-align: center;
+}
+
+.Body {
+
+}
+
+/* Section Heading */
+.Body h1 {
+    font-size: 40px;
 	font-weight: bold;
+	color: #6600cc;
+	font-family: Trebuchet MS;
+	text-align: center;
+    text-shadow: 5px 3px 8px #d19b2f;
+	margin: 5px;
+	padding: 0%;
+}
+
+/* Section Text */
+.Body p1 {
+    display: block;
+    color: #4c1211;
+    text-align: center;
+    margin: 0px;
+    padding: 0% 5%;
+}
+
+/* Everything Else Heading */
+.Body h2 {
+    font-weight: bold;
 	color: #00008b;
 	font-family: Trebuchet MS;
 	text-align: center;
@@ -27,31 +119,17 @@ h2 {
 	padding: 0px;
 }
 
-/* Page Description */
-p {
-	margin: 0px;
-	padding: 0px;
-   	color: #ffffff;
-}
-
-/* Projects Description */
-p2 {
-	color: #6600cc;
+/* Everything Else Text */
+.Body p2 {
+    display: block;
+    color: #6600cc;
 	font-family: Georgia;
-        margin: 0px;
-        padding: 0px;
-}
-
-/* Title Box */
-#Title {
-	background: linear-gradient(150deg, #00008b 60%, #ee82ee 60%);
-	border-radius: 5px;
-	padding: 2%;
-	margin: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Projects Box */
-#Projects {
+#ProjectBox {
 	background-color:  #fff8dc;
 	border: 8px solid#8b4600;
 	border-radius: 10px;
