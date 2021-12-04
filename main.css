@@ -50,11 +50,15 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 /* Images */
 img {
     border: 5px dashed#e1d9d1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Title {
@@ -63,6 +67,11 @@ img {
     border-color: #fff700;
 	padding: 8% 0%;
 	margin: 0%;
+    animation: glowring 6s infinite;
+}
+@keyframes glowring {
+    0% {border-color: #fff700; border-radius: 50px;}
+    50% {border-color: #83181b; border-radius: 0px;}
 }
 
 /* Introduction Heading */
@@ -72,12 +81,14 @@ img {
 	color: #aa6b39;
 	font-family: Trebuchet MS;
 	text-align: center;
-	margin: 0px;
+	margin: 0%;
 	padding: 2%;
 }
 
 /* Introduction Text */
 .Title p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 	margin: 0% 10%;
 	padding: 0% 10%;
    	color: #000000;
@@ -95,14 +106,21 @@ img {
 	color: #6600cc;
 	font-family: Trebuchet MS;
 	text-align: center;
-    text-shadow: 5px 3px 8px #d19b2f;
+    text-shadow: 5px 3px 3px #d19b2f;
 	margin: 5px;
 	padding: 0%;
+    animation: textglow 6s infinite;
+}
+@keyframes textglow {
+    0% {text-shadow: 5px 3px 3px #d19b2f;}
+    50% {text-shadow: 0px 0px 0px #d19b2f;}
 }
 
 /* Section Text */
 .Body p1 {
     display: block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #4c1211;
     text-align: center;
     margin: 0px;
@@ -111,18 +129,20 @@ img {
 
 /* Everything Else Heading */
 .Body h2 {
+    font-size: 25px;
     font-weight: bold;
-	color: #00008b;
+	color: #ffffff;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 0px;
-	padding: 0px;
+	padding: 10px;
 }
 
 /* Everything Else Text */
 .Body p2 {
+    font-size: 15px;
     display: block;
-    color: #6600cc;
+    color: #000000;
 	font-family: Georgia;
     margin: 0px;
     padding: 0px;
@@ -130,13 +150,90 @@ img {
 
 /* Projects Box */
 #ProjectBox {
-	background-color:  #fff8dc;
-	border: 8px solid#8b4600;
+	background: linear-gradient(0deg, #dee7ef 30%, #9caac6 90%);
+	border: 8px solid#5a79a5;
 	border-radius: 10px;
 	padding: 4%;
 	margin: 2%;
-	animation: projectboxglow 5s infinite;
+	animation: boxshimmer 3s;
 }
-@keyframes projectboxglow {
-	50% {box-shadow: 4px 4px 4px #ff3503;}
+@keyframes boxshimmer {
+    0% {box-shadow: 4px 4px 4px #5a79a5}
+	100% {box-shadow: 0px 0px 0px #5a79a5}
+}
+
+/* Projects Slide Show */
+.mySlides {
+  display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 1s ease;
+  border-radius: 0px 3px 3px 0px;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #ffd700;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
