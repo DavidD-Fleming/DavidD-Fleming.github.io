@@ -2,62 +2,72 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <nav id="navlist">
-		<div class="navbar">
-		  <ul class="navbar">
-			  <a class="nav-link nav-link-fade-up" href="#Introduction">INTRODUCTION</a>
-			  <a class="nav-link nav-link-fade-up" href="#Projects">PROJECTS</a>
-			  <a class="nav-link nav-link-fade-up" href="#">HOBBIES</a>
-			  <a class="nav-link nav-link-fade-up" href="#">FICTION</a>
-		  </ul>
-		</div>
-	</nav>
+      <div class="navbar">
+        <ul class="navbar">
+          <a class="nav-link nav-link-fade-up" href="#Introduction">INTRODUCTION</a>
+          <a class="nav-link nav-link-fade-up" href="#Projects">PROJECTS</a>
+          <a class="nav-link nav-link-fade-up" href="#">HOBBIES</a>
+          <a class="nav-link nav-link-fade-up" href="#">FICTION</a>
+        </ul>
+      </div>
+    </nav>
     <div class="Title">
-    <section id="Introduction">
-      <h1>Heya, I'm David Dong!</h1>
-      <br>
-      <p>And you're on my website! If you didn't know, I am currently a student at Rutgers University majoring in Computer Science and Physics. I chose these majors because I love learning new things and what better things to learn then computer science which is everywhere and physics which is everything!</p>
-      <br>
-      <p>This website was primarily made to chornicle my past projects and show them off. I will give a basic summary of each one and go into detail about the process and what I learned. Furthermore, since this website was also made so I could teach myself html, css, and javascript - I will also overextend and go into my hobbies and the books I have read and am currently reading. That's all and I hope you enjoy!</p>
-      <br>
-      <p>Some resources so you can link up with me:</p>
+      <section id="Introduction">
+        <h1>Hey, I'm David Dong!</h1>
+        <br>
+        <p>And you're on my website! If you didn't know, I am currently a student at Rutgers University majoring in Computer Science and Physics. I chose these majors because I love learning new things and what better things to learn then computer science which is everywhere and physics which is everything!</p>
+        <br>
+        <p>This website was primarily made to chornicle my past projects and show them off. I will give a basic summary of each one and go into detail about the process and what I learned. Furthermore, since this website was also made so I could teach myself html, css, and javascript - I will also overextend and go into my hobbies and the books I have read and am currently reading. That's all and I hope you enjoy!</p>
+        <br>
+        <p>Some resources so you can link up with me:</p>
       </section>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="Body">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="Projects">
-    <h1>Projects</h1>
-    <p1>Here, I will account all my previous projects. I will go over the software/languages/libraries/etc that I used and give a summary of the final product. I will also go a little bit in depth about what I learned, what I struggled with, what I liked about the project, and what I would do if I were to come back to it.</p1>
-    <div id="ProjectBox">
-      <h2>Pokemon Decoy (High School)</h2>
-      <img src="pokemondecoy.PNG" alt="Pokemon decoy with a shield effect triggering on the player." width="100%" height="100%">
-      <p2> Pokemon decoy was a project I worked on while in high school and was the enterprise that made me want to pursue computer science. The game was built in HTML, CSS, and Javascript and mimics the combat in Pokemon. Players would take turns casting their abilities and the first player whose health bar goes to 0 loses. This project is not optimal at all and misses features like telling players how to actually use their abilities (QWER for triangle abilities and AS for attempted pentagon). Otherwise, I still remember this project fondly due to its sheer attention to detail such as the health bar of players shaking when damaged and buttons flashing when pressed. The website also has a feature that allows it to be played in Japanese. I believe the website is still running and, if it is, you can access it <a href="https://narrowsilkycgi--daviddong1.repl.co/"> here </a>. </p2>
+      <section id="Projects">
+        <h1>Projects</h1>
+        <p1>Here, I will account all my previous projects. I will go over the software/languages/libraries/etc that I used and give a summary of the final product. I will also go a little bit in depth about what I learned, what I struggled with, what I liked about the project, and what I would do if I were to come back to it.</p1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div id="ProjectBox">
+              <h2>Pokemon Decoy (High School)</h2>
+              <img src="images/pokemondecoy.PNG" alt="Pokemon decoy with a shield effect triggering on the player." width="80%" height="80%">
+              <br>
+              <p2>&emsp;&emsp;Pokemon decoy was a project I worked on in high school with Benjamin Lifshey. The game used Replit as the platform of the website and Javascript (with HTML and CSS as the basis) as the primary language. As the name suggests, the game was made to mimic Pokemon with two players going against each other with the goal of setting the enemy's health bar to 0. Player 1 (Triangle) has the four abilities seen above while the Attempted Pentagon has two abilities being an ice beam and a heal of its own.</p2>
+              <p2>&emsp;&emsp;This was the first project I programmed that I was really happy about. It was the first time I programmed in Javascript and I learned a significant amount about the basis of coding. While I do not remember struggling with anything in particular, looking back at the program and the actual game - the whole thing was terribly inefficient. Looking past the fact that there is no indication about how to use each player's abilities and the website was not built with different screen sizes in mind, the organization and execution of the code left many areas prone to bugs and could have been faster if any methods were used.</p2>
+              <p2>&emsp;&emsp;Looking past the inefficiencies, my favorite part of the project was the sheer attention to detail. Buttons light up when pressed and each player’s health bar would shake when they take damage. Also when players landed a critical strike it would be displayed in Japanese. Also the game could be played in Japanese. If I were to come back to the project, I would definitely build it in another language that fit game development better like C#.</p2>
+              <br>
+              <p2>I believe the website is still running and, if it is, you can access it <a href="https://narrowsilkycgi--daviddong1.repl.co/"> here </a>.</p2>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div id="ProjectBox">
+              <h2>Jammin' Jelly (Scarlet Game Jam)</h2>
+              <img src="images/jamminjelly.PNG" alt="Level 2 of Jammin' Jelly." width="80%" height="80%">
+              <br>
+              <p2> Pokemon decoy was a project I worked on while in high school and was the enterprise that made me want to pursue computer science. The game was built in HTML, CSS, and Javascript and mimics the combat in Pokemon. Players would take turns casting their abilities and the first player whose health bar goes to 0 loses. This project is not optimal at all and misses features like telling players how to actually use their abilities (QWER for triangle abilities and AS for attempted pentagon). Otherwise, I still remember this project fondly due to its sheer attention to detail such as the health bar of players shaking when damaged and buttons flashing when pressed. The website also has a feature that allows it to be played in Japanese. I believe the website is still running and, if it is, you can access it <a href="https://narrowsilkycgi--daviddong1.repl.co/"> here </a>. </p2>
+            </div>
+          </div>
+          <a class="prev" onclick="iterateSlide(-1)">&#10094;</a>
+          <a class="next" onclick="iterateSlide(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </section>
     </div>
-    </section>
-    </div>
-    <script>
-        // Makes navigation bar sticky
-        window.onscroll = function() {myFunction()};
-        var navlist = document.getElementById("navlist");
-        var sticky = navlist.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navlist.classList.add("sticky")
-            }
-            else {
-                navlist.classList.remove("sticky");
-            }
-        }
-    </script>
-
   </body>
+  <script src="scripts.js"></script>
 </html>
