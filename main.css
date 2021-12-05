@@ -11,6 +11,7 @@ body {
 .navbar {
     background: linear-gradient(150deg, #dd1f13 10%, #04a9ee 90%);
     box-shadow: 0px -10px 5px 12px #000000;
+    text-align: center;
 }
 .nav-link,
 .navbar-brand {
@@ -58,30 +59,52 @@ body {
 }
 
 /* Project Images */
-.projectimg {
-    border: 5px dashed#e1d9d1;
+.soloprojectimg {
+    border: 5px inset#e1d9d1;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.groupprojectimg {
+    border: 5px inset#e1d9d1;
+    margin: 5%;
 }
 
 /* Icon Images */
 .iconimg {
     width: 50px;
 }
-
 .iconimg:hover {
     opacity: 60%;
+    animation: bounce infinite 0.8s;
 }
-
+@keyframes bounce {
+    0%{padding-left: 10px; padding-right: 0;}
+    50%{padding-left: 0; padding-right: 10px;}
+    100%{padding-left: 10px; padding-right: 0;}
+}
 /* Social Media Icons */
 .socialbuttons {
     padding-top: 20px;
 }
 
+/* Media Images */
+.witcherimg {
+    width: 80%;
+    background: url("images/thewitchercover.PNG");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Show Images Side By Side */
 .column {
     text-align: center;
+}
+
+a {
+    color: #ff7f50;
 }
 
 .Title {
@@ -108,6 +131,15 @@ body {
 	padding: 2%;
 }
 
+.Title h1:hover {
+    animation: changecolor infinite 5s;
+}
+@keyframes changecolor {
+    0%{color: #aa6b39}
+    50%{color: #fff700}
+    100%{color: #aa6b39}
+}
+
 /* Introduction Text */
 .Title p {
     font-size: 20px;
@@ -129,14 +161,16 @@ body {
 	color: #6600cc;
 	font-family: Trebuchet MS;
 	text-align: center;
-    text-shadow: 5px 3px 3px #d19b2f;
 	margin: 5px;
 	padding: 0%;
+}
+
+.Body h1:hover {
     animation: textglow 6s infinite;
 }
 @keyframes textglow {
-    0% {text-shadow: 5px 3px 3px #d19b2f;}
-    50% {text-shadow: 0px 0px 0px #d19b2f;}
+    0% {text-shadow:  0px 0px 0px#d19b2f;}
+    50% {text-shadow: 5px 3px 3px #d19b2f;}
 }
 
 /* Section Text */

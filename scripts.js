@@ -7,7 +7,7 @@ var sticky = navlist.offsetTop;
 
 // makes navlist stick to the top
 function stickyWhenScrolling() {
-	if (window.pageYOffset >= sticky) {
+	if (window.scrollY >= sticky) {
       navlist.classList.add("sticky")
     }
     else {
@@ -44,4 +44,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+function witcherHover(n) {
+    n.style.opacity = "0%";
+
+}
+
+function witcherUnhover(n) {
+    n.style.opacity = "100%";
 }
