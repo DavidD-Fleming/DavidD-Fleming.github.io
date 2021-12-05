@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: auto;
+}
+
 body {
     margin: 0%;
     background: linear-gradient(80deg, #217c7e 30%, #e2e2e2 80%);
@@ -53,20 +57,39 @@ body {
     z-index: 9999;
 }
 
-/* Images */
-img {
+/* Project Images */
+.projectimg {
     border: 5px dashed#e1d9d1;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Icon Images */
+.iconimg {
+    width: 50px;
+}
+
+.iconimg:hover {
+    opacity: 60%;
+}
+
+/* Social Media Icons */
+.socialbuttons {
+    padding-top: 20px;
+}
+
+/* Show Images Side By Side */
+.column {
+    text-align: center;
+}
+
 .Title {
 	border-radius: 50px;
     border-style: solid;
     border-color: #fff700;
-	padding: 8% 0%;
-	margin: 0%;
+	padding: 6% 0%;
+	margin: 0% 6%;
     animation: glowring 6s infinite;
 }
 @keyframes glowring {
@@ -121,10 +144,10 @@ img {
     display: block;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4c1211;
+    color: #000000;
     text-align: center;
     margin: 0px;
-    padding: 0% 5%;
+    padding: 0% 10%;
 }
 
 /* Everything Else Heading */
@@ -179,9 +202,9 @@ img {
   width: auto;
   padding: 15px;
   margin-top: -22px;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   transition: 1s ease;
   border-radius: 0px 3px 3px 0px;
   user-select: none;
@@ -193,7 +216,7 @@ img {
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #ffd700;
+  background-color: #000000;
 }
 /* Caption text */
 .text {
@@ -215,7 +238,10 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active {
+  background-color: #000000;
+}
+.dot:hover {
   background-color: #717171;
 }
 /* Fading animation */

@@ -15,17 +15,21 @@ function stickyWhenScrolling() {
     }
 }
 
+// sets to first project
 var slideIndex = 1;
 showSlides(slideIndex);
 
+// changes slide when left/right button is pressed
 function iterateSlide(n) {
   showSlides(slideIndex += n);
 }
 
+// jumps to project selected by dots
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// shows current slide and updates dots
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
