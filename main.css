@@ -102,6 +102,12 @@ body {
     text-align: center;
 }
 
+/* Show Boxes Side By Side */
+.boxcolumn {
+    text-align: center;
+    display: flex;
+}
+
 a {
     color: #ff7f50;
 }
@@ -183,18 +189,17 @@ a {
     padding: 0% 10%;
 }
 
-/* Everything Else Heading */
+/* Projects Heading */
 .Body h2 {
     font-size: 25px;
-    font-weight: bold;
-	color: #ffffff;
+    font-weight: bolder;
+	color: #0000ff;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 0px;
 	padding: 10px;
 }
-
-/* Everything Else Text */
+/* Projects Text */
 .Body p2 {
     font-size: 15px;
     display: block;
@@ -204,11 +209,10 @@ a {
     margin: 0px;
     padding: 0px;
 }
-
 /* Projects Box */
 #ProjectBox {
-	background: linear-gradient(0deg, #dee7ef 30%, #9caac6 90%);
-	border: 8px solid#5a79a5;
+	background: linear-gradient(355deg, #fff7e8 70%, #a65e2e 20%);
+	border: 8px ridge#ffffff;
 	border-radius: 10px;
 	padding: 4%;
 	margin: 2%;
@@ -236,7 +240,7 @@ a {
   width: auto;
   padding: 15px;
   margin-top: -22px;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   font-size: 30px;
   transition: 1s ease;
@@ -250,7 +254,7 @@ a {
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #000000;
+  background-color: #f2ffff;
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -284,15 +288,45 @@ a {
   to {opacity: 1}
 }
 
-#Hobby {
-    background-color:  black;
-    border: 10px solid white;
+/* Clubs Heading */
+.Body h3 {
+    font-size: 40px;
+    font-weight: bolder;
+	color: #ffffff;
+	font-family: Trebuchet MS;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}
+/* Clubs Text */
+.Body p3 {
+    font-size: 15px;
+    display: block;
+    color: #ffffff;
+	font-family: Georgia;
+    line-height: 20px;
+    margin: 15px;
+}
+/* Club Boxes */
+#ClubCOGS {
+    background-color: #b71a0b;
+    border: 10px double#ffffff;
     border-radius: 3px;
-    width: 30%;
+    width: 47%;
     display: inline-block;
     padding: 4% 0%;
 	margin: 2% 0%;
 }
+#ClubBlueprint {
+    background-color: #009aee;
+    border: 10px double#ffffff;
+    border-radius: 3px;
+    width: 47%;
+    display: inline-block;
+    padding: 4% 0%;
+	margin: 2% 0%;
+}
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 560px) {
@@ -300,10 +334,19 @@ a {
   .nav-link {font-size: 10px}
 }
 
-@media only screen and (max-width: 900px) {
-    #Hobby {
+/* On smaller screens, put club boxes on different rows */
+@media only screen and (max-width: 800px) {
+    #ClubCOGS {
         width: 90%;
         margin: 2px 0%;
         padding: 2% 0%;
+    }
+    #ClubBlueprint {
+        width: 90%;
+        margin: 2px 0%;
+        padding: 2% 0%;
+    }
+    .boxcolumn {
+        display: block;
     }
 }
