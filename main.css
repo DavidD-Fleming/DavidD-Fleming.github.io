@@ -11,7 +11,6 @@ body {
 .navbar {
     background: linear-gradient(150deg, #dd1f13 10%, #04a9ee 90%);
     box-shadow: 0px -10px 5px 12px #000000;
-    text-align: center;
 }
 .nav-link,
 .navbar-brand {
@@ -68,7 +67,7 @@ body {
 
 .groupprojectimg {
     border: 5px inset#e1d9d1;
-    margin: 5%;
+    margin: 0% 2%;
 }
 
 /* Icon Images */
@@ -142,7 +141,7 @@ a {
 
 /* Introduction Text */
 .Title p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 	margin: 0% 10%;
 	padding: 0% 10%;
@@ -201,6 +200,7 @@ a {
     display: block;
     color: #000000;
 	font-family: Georgia;
+    line-height: 20px;
     margin: 0px;
     padding: 0px;
 }
@@ -252,16 +252,6 @@ a {
 .prev:hover, .next:hover {
   background-color: #000000;
 }
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -293,7 +283,27 @@ a {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+#Hobby {
+    background-color:  black;
+    border: 10px solid white;
+    border-radius: 3px;
+    width: 30%;
+    display: inline-block;
+    padding: 4% 0%;
+	margin: 2% 0%;
+}
+
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+@media only screen and (max-width: 560px) {
+  .prev, .next {font-size: 11px}
+  .nav-link {font-size: 10px}
+}
+
+@media only screen and (max-width: 900px) {
+    #Hobby {
+        width: 90%;
+        margin: 2px 0%;
+        padding: 2% 0%;
+    }
 }

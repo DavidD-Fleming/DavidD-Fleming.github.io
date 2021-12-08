@@ -48,7 +48,6 @@ function showSlides(n) {
 
 function witcherHover(n) {
     n.style.opacity = "0%";
-
 }
 
 function witcherUnhover(n) {
