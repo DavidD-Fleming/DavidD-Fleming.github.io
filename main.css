@@ -83,9 +83,13 @@ body {
     50%{padding-left: 0; padding-right: 10px;}
     100%{padding-left: 10px; padding-right: 0;}
 }
-/* Social Media Icons */
+/* Social Media Icons? */
 .socialbuttons {
     padding-top: 20px;
+}
+/* Club Icons */
+.clubimg {
+    width: 50px;
 }
 
 /* Media Images */
@@ -106,6 +110,8 @@ body {
 .boxcolumn {
     text-align: center;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 a {
@@ -309,24 +315,52 @@ a {
 }
 /* Club Boxes */
 #ClubCOGS {
-    background-color: #b71a0b;
+    background-color: #b4042c;
     border: 10px double#ffffff;
-    border-radius: 3px;
+    border-radius: 6px;
     width: 47%;
     display: inline-block;
     padding: 4% 0%;
 	margin: 2% 0%;
 }
 #ClubBlueprint {
-    background-color: #009aee;
+    background-color: #44abfb;
     border: 10px double#ffffff;
-    border-radius: 3px;
+    border-radius: 6px;
     width: 47%;
     display: inline-block;
     padding: 4% 0%;
 	margin: 2% 0%;
 }
 
+/* Hobbies Boxes */
+#HobbyPlant {
+    background-color: #4fa64f;
+    border: 10px groove#ffffff;
+    border-radius: 6px;
+    width: 30%;
+    display: inline-block;
+    padding: 4% 0%;
+	margin: 2% 0%;
+}
+#HobbyGame {
+    background-color: #e6b95f;
+    border: 10px groove#ffffff;
+    border-radius: 6px;
+    width: 30%;
+    display: inline-block;
+    padding: 4% 0%;
+	margin: 2% 0%;
+}
+#HobbyBook {
+    background-color: #c38452;
+    border: 10px groove#ffffff;
+    border-radius: 6px;
+    width: 30%;
+    display: inline-block;
+    padding: 4% 0%;
+	margin: 2% 0%;
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 560px) {
@@ -346,7 +380,23 @@ a {
         margin: 2px 0%;
         padding: 2% 0%;
     }
-    .boxcolumn {
-        display: block;
+}
+
+/* On smaller screens, put hobby boxes on different rows */
+@media only screen and (max-width: 1000px) {
+    #HobbyPlant {
+        width: 90%;
+        margin: 2px 0%;
+        padding: 2% 0%;
+    }
+    #HobbyGame {
+        width: 90%;
+        margin: 2px 0%;
+        padding: 2% 0%;
+    }
+    #HobbyBook {
+        width: 90%;
+        margin: 2px 0%;
+        padding: 2% 0%;
     }
 }
