@@ -1,5 +1,6 @@
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -11,9 +12,12 @@ body {
 .navbar {
     background: linear-gradient(150deg, #dd1f13 10%, #04a9ee 90%);
     box-shadow: 0px -10px 5px 12px #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
-.nav-link,
-.navbar-brand {
+.nav-link{
     color: #ffffff;
 }
 .nav-link {
@@ -49,12 +53,6 @@ body {
 }
 .navbar-collapse {
     justify-content: flex-end;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
 }
 
 /* Project Images */
@@ -366,6 +364,14 @@ a {
 @media only screen and (max-width: 560px) {
   .prev, .next {font-size: 11px}
   .nav-link {font-size: 10px}
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
 }
 
 /* On smaller screens, put club boxes on different rows */
