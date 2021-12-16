@@ -17,9 +17,6 @@ body {
     width: 100%;
     z-index: 9999;
 }
-.nav-link{
-    color: #ffffff;
-}
 .nav-link {
     font-weight: bold;
     font-size: 14px;
@@ -57,15 +54,15 @@ body {
 
 /* Project Images */
 .soloprojectimg {
-    border: 5px inset#e1d9d1;
+    border: 5px inset#000000;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .groupprojectimg {
-    border: 5px inset#e1d9d1;
-    margin: 0% 2%;
+    border: 2px inset#000000;
+    margin: 0% 1%;
 }
 
 /* Icon Images */
@@ -88,15 +85,6 @@ body {
 /* Club Icons */
 .clubimg {
     width: 50px;
-}
-
-/* Media Images */
-.witcherimg {
-    width: 80%;
-    background: url("images/thewitchercover.PNG");
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Show Images Side By Side */
@@ -159,13 +147,9 @@ a {
     text-align: center;
 }
 
-.Body {
-
-}
-
 /* Section Heading */
 .Body h1 {
-    font-size: 40px;
+    font-size: 50px;
 	font-weight: bold;
 	color: #6600cc;
 	font-family: Trebuchet MS;
@@ -178,8 +162,7 @@ a {
     animation: textglow 6s infinite;
 }
 @keyframes textglow {
-    0% {text-shadow:  0px 0px 0px#d19b2f;}
-    50% {text-shadow: 5px 3px 3px #d19b2f;}
+    50% {text-shadow: 2px 2px 2px #6600cc;}
 }
 
 /* Section Text */
@@ -189,19 +172,16 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     text-align: center;
-    margin: 0px;
     padding: 0% 10%;
 }
 
 /* Projects Heading */
 .Body h2 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bolder;
-	color: #0000ff;
+	color: #ff5349;
 	font-family: Trebuchet MS;
 	text-align: center;
-	margin: 0px;
-	padding: 10px;
 }
 /* Projects Text */
 .Body p2 {
@@ -210,13 +190,11 @@ a {
     color: #000000;
 	font-family: Georgia;
     line-height: 20px;
-    margin: 0px;
-    padding: 0px;
 }
 /* Projects Box */
 #ProjectBox {
-	background: linear-gradient(355deg, #fff7e8 70%, #a65e2e 20%);
-	border: 8px ridge#ffffff;
+	background-color: #cbc3e3;
+	border: 8px double#ffffff;
 	border-radius: 10px;
 	padding: 4%;
 	margin: 2%;
@@ -292,6 +270,72 @@ a {
   to {opacity: 1}
 }
 
+/* Images Show */
+.myImages {
+  display: none;
+}
+/* Slideshow container */
+.imageshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.iprev, .inext {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 1s ease;
+  border-radius: 0px 1px 1px 0px;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.inext {
+  right: 0;
+  border-radius: 1px 0 0 1px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.iprev:hover {
+    opacity: 60%;
+    animation: bounce2 infinite 0.8s;
+}
+.inext:hover {
+    opacity: 60%;
+    animation: bounce3 infinite 0.8s;
+}
+@keyframes bounce2 {
+    0%{padding-left: 0px; padding-right: 0;}
+    50%{padding-left: 15px; padding-right: 0px;}
+    100%{padding-left: 0px; padding-right: 0;}
+}
+@keyframes bounce3 {
+    0%{padding-left: 0px; padding-right: 0;}
+    50%{padding-left: 0; padding-right: 15px;}
+    100%{padding-left: 0px; padding-right: 0;}
+}
+.active {
+  background-color: #f2ffff;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 /* Clubs Heading */
 .Body h3 {
     font-size: 40px;
@@ -334,7 +378,7 @@ a {
 /* Hobbies Boxes */
 #HobbyPlant {
     background-color: #4fa64f;
-    border: 10px groove#ffffff;
+    border: 10px double#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
@@ -343,7 +387,7 @@ a {
 }
 #HobbyGame {
     background-color: #e6b95f;
-    border: 10px groove#ffffff;
+    border: 10px double#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
@@ -352,7 +396,7 @@ a {
 }
 #HobbyBook {
     background-color: #c38452;
-    border: 10px groove#ffffff;
+    border: 10px double#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
