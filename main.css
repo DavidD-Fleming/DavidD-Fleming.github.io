@@ -3,9 +3,14 @@ html {
     scroll-padding-top: 70px;
 }
 
+
 body {
     margin: 0%;
-    background: linear-gradient(80deg, #217c7e 30%, #e2e2e2 80%);
+}
+
+.TotalBackground {
+    height: 100%;
+    background: linear-gradient(80deg, rgb(33, 124, 126) 30%, rgb(226, 226, 226) 80%);
 }
 
 /* Navigation Bar Features */
@@ -126,10 +131,7 @@ a {
 	text-align: center;
 	margin: 0%;
 	padding: 2%;
-}
-
-.Title h1:hover {
-    animation: changecolor infinite 5s;
+    animation: changecolor infinite 6s;
 }
 @keyframes changecolor {
     0%{color: #aa6b39}
@@ -151,7 +153,7 @@ a {
 .Body h1 {
     font-size: 50px;
 	font-weight: bold;
-	color: #6600cc;
+	color: #c71585;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 5px;
@@ -179,13 +181,13 @@ a {
 .Body h2 {
     font-size: 40px;
     font-weight: bolder;
-	color: #ff5349;
+	color: #000000;
 	font-family: Trebuchet MS;
 	text-align: center;
 }
 /* Projects Text */
 .Body p2 {
-    font-size: 15px;
+    font-size: 17px;
     display: block;
     color: #000000;
 	font-family: Georgia;
@@ -193,10 +195,10 @@ a {
 }
 /* Projects Box */
 #ProjectBox {
-	background-color: #cbc3e3;
+	background-color: #eeefee;
 	border: 8px double#ffffff;
 	border-radius: 10px;
-	padding: 4%;
+	padding: 3%;
 	margin: 2%;
 	animation: boxshimmer 3s;
 }
@@ -348,7 +350,7 @@ a {
 }
 /* Clubs Text */
 .Body p3 {
-    font-size: 15px;
+    font-size: 17px;
     display: block;
     color: #ffffff;
 	font-family: Georgia;
@@ -414,7 +416,7 @@ a {
    left: 0;
    bottom: 0;
    width: 100%;
-   color: white;
+   color: #ffffff;
    text-align: center;
 }
 

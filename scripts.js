@@ -1,3 +1,24 @@
+// dynamic background
+// array of rgb values for two colors
+const startingBackgroundColors = [33, 124, 126, 226, 226, 226];
+const backgroundColors = [33, 124, 126, 226, 226, 226];
+const section1 = document.querySelector('.TotalBackground');
+window.addEventListener('scroll', () => {
+    const y = 1 + (window.scrollY || window.pageYOffset) / 700;
+    var colorValue;
+    for (i = 0; i < backgroundColors.length; i++) {
+        if (i % 3 == 0) {
+            colorValue = 100;
+        } else if (i % 2) {
+            colorValue = 200;
+        } else {
+            colorValue = 150;
+        }
+        backgroundColors[i] = Math.round(Math.min(Math.max(startingBackgroundColors[i] / y, colorValue), startingBackgroundColors[i]));
+    }
+    section1.style.background = `linear-gradient(80deg, rgb(${backgroundColors[0]}, ${backgroundColors[1]}, ${backgroundColors[2]}) 30%, rgb(${backgroundColors[3]}, ${backgroundColors[4]}, ${backgroundColors[5]}) 80%)`;
+})
+
 // sets to first project
 var slideIndex = 1;
 showSlides(slideIndex);
