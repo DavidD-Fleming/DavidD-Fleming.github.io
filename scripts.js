@@ -4,15 +4,15 @@ const startingBackgroundColors = [33, 124, 126, 226, 226, 226];
 const backgroundColors = [33, 124, 126, 226, 226, 226];
 const section1 = document.querySelector('.TotalBackground');
 window.addEventListener('scroll', () => {
-    const y = 1 + (window.scrollY || window.pageYOffset) / 700;
+    const y = 1 + (window.scrollY || window.pageYOffset) / 3000;
     var colorValue;
     for (i = 0; i < backgroundColors.length; i++) {
         if (i % 3 == 0) {
-            colorValue = 100;
+            colorValue = 100; // 100
         } else if (i % 2) {
-            colorValue = 200;
+            colorValue = 200; // 200
         } else {
-            colorValue = 150;
+            colorValue = 150; // 150
         }
         backgroundColors[i] = Math.round(Math.min(Math.max(startingBackgroundColors[i] / y, colorValue), startingBackgroundColors[i]));
     }
