@@ -154,7 +154,7 @@ a {
 .Body h1 {
     font-size: 50px;
 	font-weight: bold;
-	color: #8d0b0b;
+	color: #ad0b0b;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 5px;
@@ -279,6 +279,7 @@ a {
 }
 /* Slideshow container */
 .imageshow-container {
+  background: #000000;
   max-width: 800px;
   position: relative;
   margin: auto;
@@ -289,7 +290,7 @@ a {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   font-size: 40px;
   transition: 1s ease;
@@ -298,9 +299,12 @@ a {
 }
 /* Position the "next button" to the right */
 .inext {
-  right: 0;
+  right: 2%;
   border-radius: 1px 0 0 1px;
 }
+.iprev {
+    left: 2%;
+  }
 /* On hover, add a black background color with a little bit see-through */
 .iprev:hover {
     opacity: 60%;
