@@ -27,7 +27,7 @@
         <br>
         <p>And you're on my website! If you didn't know, I am currently a student at Rutgers University majoring in Computer Science and Physics. I chose these majors because I love learning new things and what better things to learn then computer science which is everywhere and physics which is everything!</p>
         <br>
-        <p>This website was primarily made to chornicle my past projects and show them off. I will give a basic summary of each one and go into detail about the process and what I learned. After all my projects, I will also talk a little bit about my clubs and hobbies. That's all and I hope you enjoy!</p>
+        <p>This website was primarily made to chornicle my past projects and show them off. I will give a basic summary of each one and go into detail about the process and what I learned. After all my projects, I will also talk a little bit about my clubs and hobbies. I hope you enjoy!</p>
         <br>
         <p>Some resources so you can link up with me:</p>
         <br>
@@ -55,7 +55,7 @@
     <div class="Body">
       <section id="Projects">
         <h1>Projects</h1>
-        <p1>Here, I will account all my previous projects. I will go over the software/languages/libraries/etc that I used and give a summary of the final product. I will also go in depth about what I learned, what I struggled with, what I liked about the project, and what I would do if I were to come back to it.</p1>
+        <p1>Here, I will account all my previous projects. I will go over the software/languages/libraries/etc that I used and give a summary of the final product. I will also go in depth about what I learned and what I struggled with.</p1>
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div id="ProjectBox">
@@ -80,49 +80,47 @@
                 <a class="inext" onclick="iterateImage(1)">&#x21e8;</a>
               </div>
               <br>
-              <p2>&emsp;&emsp;Text Pop was a game I made using <b>Unity</b> and <b>C#</b>. The goal of the game is to avoid obstacles by moving your mouse to control the player and pressing keys to pop incoming hazards. (The guide to the gameplay is in one of the images above). The game features multiple difficulty levels and features a high score system for all three difficulties. The longer you survive the more points you get!</p2>
-              <p2>&emsp;&emsp;My goal for Text Pop was to create a game that I could solely make myself. I wanted to put my Unity knowledge and programming skills to the test and see if I could make a simple game that was challenging and fun to play. Due to my knowledge of C# I was able to program a significant amount of the project relatively quickly but near the end of the development I ran into the ninety-ninety rule. Essentially, when I thought I was nearly done with the everything, I learned the hard way that finalizing the game by building and running the application takes a significant amount of time in itself and, like the ninety-ninety rule says, took just as much time finalizing the game as it did building the entire thing.</p2>
-              <p2>&emsp;&emsp;Despite the challenges of the project, I am very happy with the final product. The game is very simplistic but it was the first game I've made that has features you'd see in other games like music, settings, high scores, etc. Nevertheless, my favorite part of the project, by far, is the look. The color of each hazard is associated with an RGB value that changes based on the duration of the game, the speed of the hazard, and the value of its key. That means each hazard has a unique color that even changes as the game progresses. I thought this made the game look visually appealing and even helps the player keep track of how long they have been playing. While Text Pop is a finished game, if I were to add anything, I would add an achievement system where the player can unlock different colors based on their high scores for each difficulty mode.</p2>
+              <p2>&emsp;&emsp;Text Pop was a game I made using <b>Unity</b> and <b>C#</b>. The goal of the game is to avoid obstacles by moving your mouse to control the player and pressing keys to pop incoming hazards. (The guide to the gameplay is in one of the images above). The game features multiple difficulty levels and a high score system for all three difficulties. The longer you survive the more points you get!</p2>
+              <p2>&emsp;&emsp;My goal for Text Pop was to create a game that I could solely make myself. The biggest challenge was to find a way to make the game look visually appealing without hiring an artist. Initially, the game looked very bland as all the hazards were just a dull gray color and when I added different colors to the hazards, it then looked too confusing and random. Eventually, I realized I could use linear interpolation and associate an rgb value with an aspect of the game such as time, key, and hazard speed to give all the hazards a unique look that actually relates to the gameplay. This not only made the game look significantly better, but also provides the player visual cues to make gameplay cleaner.</p2>
               <br>
               <p2>The Github repository of the game is <a href="https://github.com/DavidD-Fleming/TextPop" target="_blank">here</a> and you can play it yourself by downloading it <a href="Text Pop Game.zip" download>here</a> (Windows only).</p2>
             </div>
           </div>
           <div class="mySlides fade">
             <div id="ProjectBox">
-              <h2>First Person Prototype</h2>
-              <img src="images/firstpersonhaven.PNG" alt="A landed smoke in Haven grass." class="soloprojectimg" width="80%" height="80%">
-              <br>
-              <p2>&emsp;&emsp;This first person prototype was built using <b>Unity</b> and <b>C#</b>. The goal of the project is to fix the code used by Brackeys (popular Unity youtuber) for his first person movement video and implement abilities used by Jett (from Valorant) to test its functionality. The foundation of the code mirrors the one used by Brackeys but almost all of it was reworked so movement wouldn't be as clunky and remove bugs such as the player being able to walk into the air. Then, there is an additional script that allows the player to access abilities used by Jett such as dashing, throwing knives, throwing smokes, etc.</p2>
-              <p2>&emsp;&emsp;The most challenging part of the project is also my favorite, which is implementing Jett's abilities. While most of them are pretty straightforward, she has one where she throws a smoke ball that expands when it collides with terrain. The difficult part of the smoke ball is that the player is able to guide it while it is flying in the air. Long story short, I had to learn and use quaternions which is a high level physics mechanic in order to get the smoke ball to rotate and move appropriately. If I were to come back to this project, I would utilize this prototype as the foundation to create movement for a fully realized first person game.</p2>
-              <br>
-              <p2>The Github repository of this first person prototype is <a href="https://github.com/DavidD-Fleming/FirstPersonPrototype" target="_blank">here</a>.</p2>
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div id="ProjectBox">
               <h2>Discord Bot</h2>
               <div class="column">
-                <img src="images/discordbotcommands2.PNG" alt="Some of the Discord bot commands." class="groupprojectimg" width="37%" height="37%">
+                <img src="images/discordbotspacepic.PNG" alt="The daily astronomy picture from the NASA database." class="groupprojectimg" width="37%" height="37%">
                 <img src="images/discordbotmeme.PNG" alt="Pigeon meme talking about how this project was just done to make instant memes." class="groupprojectimg" width="52%" height="50%">
               </div>
               <br>
-              <p2>&emsp;&emsp;What started as a fun little project to create a Discord bot that I could use with friends turned into an endeavor that significantly enhanced my knowledge of back end development. My Discord bot, or Jack Bot, was made using <b>Javascript</b>, <b>Node.js</b>, and discord.js. Eventually, as I wanted to give my bot more ambitious features, I also ended up utilizing RESTful apis and JSON. The bot features a wide variety of commands such as dming other users, creating customizable memes, and changing into other users.</p2>
-              <p2>&emsp;&emsp;Jack Bot was made with scaling in mind so it could feature a large number of different commands without slowing down too much or negatively affecting other commands. In fact, Jack Bot was also made so adding a new command would be isolated from the bot's main operations so there would not be any weird or unexpected effects from giving the bot a new feature.</p2>
-              <p2>&emsp;&emsp;One of the challenges I ran into while making this Discord bot was creating more advanced commands. I wanted to go further than just making the bot do things like simple arithmetic or outputting random numbers. In order to be more adventurous I had to teach myself a significant amount about promises, apis, JSON, and etc. While it was challenging connecting the pieces, I was eventually able to understand enough that Jack Bot is now able to do things like defining words using Urban Dictionary and sending inspirational quotes from Kanye West. While I am happy with the amount of commands Jack Bot has, I look forward to consistently adding new features to make it even more fun.</p2>
+              <p2>&emsp;&emsp;What started as a fun little project to create a Discord bot that I could use with friends turned into an endeavor that significantly enhanced my knowledge of back end development. My Discord bot, or Jack Bot, was made using <b>Javascript</b>, <b>Node.js</b>, and discord.js. Eventually, as I wanted to give my bot more ambitious features, I also ended up utilizing RESTful APISs and JSON. The bot features a wide variety of commands such as dming other users, creating customizable memes, and changing into other users.</p2>
+              <p2>&emsp;&emsp;Surprisingly, this Discord bot was actually one of the more difficult projects I pursued as I simply learned that I knew nothing. The entire framework is built on the discord library and required knowledge on asynchronous programming, JSON, APIs, Async/Await, and etc - almost all of which I knew little to nothing about. This meant I spent hours researching and teaching myself how to build this bot step by step. It was an insanely satisfying process and while it took an incredibly long time to learn everything, I absorbed so much new information and it really opened my eyes to the beauty of software development.</p2>
+              <p2>&emsp;&emsp;Building this bot not only came with the satisfaction of learning an incredible amount about programming, but it also came with the reward of now having a pretty awesome Discord bot. Jack Bot started out with some pretty cool commands like parroting users, personalizing profile pictures, and making memes. However, as I learned more about APIs, I was able to add new commands like defining terms using Urban Dictionary, getting pictures from the NASA database, and finding inspirational quotes using the Kanye West API.</p2>
               <br>
-              <p2>The Github repository of Jack Bot is <a href="https://github.com/DavidD-Fleming/JackOfAllBot" target="_blank">here</a>.</p2>
+              <p2>Unfortunately, I do not have the resources to host Jack Bot and make it available for everyone but you can view its Github repository <a href="https://github.com/DavidD-Fleming/JackOfAllBot" target="_blank">here</a>.</p2>
             </div>
           </div>
           <div class="mySlides fade">
             <div id="ProjectBox">
               <h2>Personal Website</h2>
-              <img src="images/oldwebsite.PNG" alt="Text Pop title." class="soloprojectimg" width="80%" height="80%">
+              <img src="images/oldwebsite.PNG" alt="Old website image." class="soloprojectimg" width="80%" height="80%">
               <br>
-              <p2>&emsp;&emsp;Finally, the latest project I worked on while making this website was, this website! I wanted to create something that could help show myself and my projects off and a website seemed like the best way to do so. This personal website was made using <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> and is hosted on Github pages.</p2>
-              <p2>&emsp;&emsp;The most time consuming and difficult part of this project was actually just designing it. I am by no means a professional when it comes to design and I spent a majority of my time trying to make sure the website looked at least a little bit visually appealing. Above you can actually see one of my earlier drafts on how I wanted it to look. It's not very pretty. There were moments when I had a bunch of work done but decided to rework most of everything so it could look and feel better. I also sent earlier versions of this website to several friends to gauge their opinions and see what could look better or what I should add.</p2>
-              <p2>&emsp;&emsp;It is a little bit dorky but my favorite thing about this website is the animations. I am a very detail oriented person so small things like buttons moving left and right, backgrounds lighting up, words changing colors, etc was really cool to me. If it wouldn't have cluttered everything up and lessened the appeal, I would have given everything an animation! While I am satisfied with this website, it is also pretty basic so in the future, if I were to make more websites, I would want to think of a unique theme and niche that would make the website more interactable.</p2>
+              <p2>&emsp;&emsp;One of the projects I have worked on is the one you are using right now and it is this website! I wanted to create something that could help show myself and my projects off and a website seemed like the best way to do so. This personal website was made using <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> and is hosted on Github pages.</p2>
+              <p2>&emsp;&emsp;The most difficult part of this project is actually just learning the languages necessary to build it. I had some minor experience building websites from classes I took in high school but the process essentially required me to relearn everything. However, while learning everything was the most challenging part, the most time consuming part was learning what I wanted this website to be and what I wanted it to look like. I believe I went through at least five different iterations on how I wanted it to look. I also wanted to feature a lot more projects that I worked on but sadly had to get rid of them as to not bombard you with subpar projects.</p2>
               <br>
-              <p2>The Github repository of the website is <a href="https://github.com/DavidD-Fleming/DavidD-Fleming.github.io" target="_blank">here</a>.</p2>
+              <p2>However! Some of those subpar projects are public on my Github so you can view them there as well as viewing the Github repository of this website <a href="https://github.com/DavidD-Fleming/DavidD-Fleming.github.io" target="_blank">here</a>.</p2>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div id="ProjectBox">
+              <h2>React Movie Website</h2>
+              <img src="images/reactmoviewebsite.PNG" alt="Snippet of the react movie website." class="soloprojectimg" width="80%" height="80%">
+              <br>
+              <p2>&emsp;&emsp;It was around when I realized how to work with APIs using the Discord bot that I wanted to build an application that delved deeper into API usage. Furthermore, I also wanted to learn how to use <b>React</b> as I heard it was one of the best ways to build websites. Therefore, to kill two birds with one stone, I built a website that allows the user to see the most popular movies at the time. The user can also delve deeper into those popular movies or search up some of their own to see the runtime, budget, revenue, and cast for each movie. Aforementioned, the website was built using <b>React</b>, <b>Javascript</b>, TMDB, and is hosted on Netlify. To make sure I was not just learning random shenanigans this website was built following the FreeCodeCamp React course.</p2>
+              <p2>&emsp;&emsp;This project was another large endeavor as I had to learn a lot about everything. React is a whole another beast and throughout the process I learned a significant amount about hooks, components, local/session storage, and etc. I even taught myself how to use Postman so I could better keep track of the API and how to utilize it properly. Overall, it was a very satisfying project to work on but what is a website that you can't show off?</p2>
+              <br>
+              <p2>In order to make sure it was a fully realized project I used Netlify in order to host the website and you can access it <a href="https://upbeat-kirch-b64791.netlify.app/" target="_blank">here</a>. Also, as per usual, you can access the Github repository of the website <a href="https://github.com/DavidD-Fleming/ReactMovieDatabase" target="_blank">here</a>.</p2>
             </div>
           </div>
           <a class="prev" onclick="iterateSlide(-1)">&#10094;</a>
