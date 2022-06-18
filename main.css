@@ -1,209 +1,178 @@
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
-
-
 body {
-    margin: 0%;
-    background-color: #ffffff;
+  margin: 0px;
+  background-color: #eeeeee;
 }
-
-.TotalBackground {
-    height: 100%;
-    background: linear-gradient(90deg, rgb(65, 158, 160), rgb(134, 194, 134), rgb(77, 179, 131));
-}
-
 /* Navigation Bar Features */
 .navbar {
-    background: linear-gradient(150deg, #dd1f13 10%, #04a9ee 90%);
-    box-shadow: 0px -10px 5px 12px #000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+  background-color: #202020;
+  box-shadow: 0px -13px 5px 12px #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 .nav-link {
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 8px 0px;
-    margin: 0% 5%;
-    display: inline-block;
-    position: relative;
-    opacity: 100%;
+  font-family: Trebuchet MS;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 0px;
+  margin: 0% 2%;
+  display: inline-block;
+  position: relative;
+  opacity: 80%;
 }
 .nav-link:hover {
-  	color: #ffffff;
-    opacity: 70%;
+  color: #ffffff;
+  opacity: 100%;
 }
 .nav-link::before {
-    transition: 500ms;
-    height: 5%;
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
+  transition: 500ms;
+  height: 5%;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
 }
 .nav-link-fade-up::before {
-    width: 100%;
-    bottom: 20%;
-    opacity: 0%;
+  width: 100%;
+  bottom: 20%;
+  opacity: 0%;
 }
 .nav-link-fade-up:hover::before {
-    bottom: 35%;
-    opacity: 100%;
+  bottom: 30%;
+  opacity: 100%;
 }
-.navbar-collapse {
-    justify-content: flex-end;
+/* Profile Picture */
+.profileimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 3px 0px 0px #000000;
 }
-
 /* Project Images */
 .soloprojectimg {
-    border: 5px inset#000000;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  border: 2px inset#000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .groupprojectimg {
-    border: 2px inset#000000;
-    margin: 0% 1%;
+  border: 2px inset#000000;
+  margin: 0% 1%;
 }
-
 /* Icon Images */
 .iconimg {
-    width: 50px;
+  width: 50px;
+  padding-top: 20px;
+  padding: 5px;
 }
 .iconimg:hover {
-    opacity: 60%;
-    animation: bounce infinite 0.8s;
+  opacity: 60%;
+  animation: bounce infinite 0.8s;
 }
 @keyframes bounce {
-    0%{padding-left: 10px; padding-right: 0;}
-    50%{padding-left: 0; padding-right: 10px;}
-    100%{padding-left: 10px; padding-right: 0;}
+  0%{
+     padding-left: 10px;
+      padding-right: 0;
+ }
+  50%{
+     padding-left: 0;
+      padding-right: 10px;
+ }
+  100%{
+     padding-left: 10px;
+      padding-right: 0;
+ }
 }
-/* Social Media Icons? */
-.socialbuttons {
-    padding-top: 20px;
-    padding: 5px;
+/* General Icons */
+.generalimg {
+  width: 50px;
 }
-/* Club Icons */
-.clubimg {
-    width: 50px;
-}
-
 /* Show Images Side By Side */
 .column {
-    text-align: center;
+  text-align: center;
 }
-
 /* Show Boxes Side By Side */
 .boxcolumn {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 a {
-    color: #ff7f50;
+  color: #ff7f50;
 }
-
 .Title {
-	border-radius: 50px;
-    border-style: solid;
-    border-color: #fff700;
-	padding: 6% 0%;
-	margin: 0% 6%;
-    animation: glowring 6s infinite;
+  padding: 6% 0%;
+  margin: 0% 6%;
+  background-color: #e8e8e8;
+  box-shadow: 0px 2px 0px 2px #cfcfcf;
 }
-@keyframes glowring {
-    0% {border-color: #fff700; border-radius: 50px;}
-    50% {border-color: #83181b; border-radius: 0px;}
-}
-
 /* Introduction Heading */
 .Title h1 {
-    font-size: 50px;
-	font-weight: bold;
-	color: #aa6b39;
-	font-family: Trebuchet MS;
-	text-align: center;
-	margin: 0%;
-	padding: 2%;
-    animation: changecolor infinite 6s;
+  font-size: 50px;
+  font-weight: bold;
+  color: #aa6b39;
+  font-family: Trebuchet MS;
+  text-align: center;
+  margin: 0%;
+  padding: 2%;
 }
-@keyframes changecolor {
-    0%{color: #aa6b39}
-    50%{color: #fff700}
-    100%{color: #aa6b39}
-}
-
 /* Introduction Text */
 .Title p {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-	margin: 0% 10%;
-	padding: 0% 10%;
-   	color: #000000;
-    text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0% 10%;
+  padding: 0% 10%;
+  color: #000000;
+  text-align: center;
 }
-
 /* Section Heading */
 .Body h1 {
-    font-size: 50px;
-	font-weight: bold;
-	color: #ad0b0b;
-	font-family: Trebuchet MS;
-	text-align: center;
-	margin: 5px;
-	padding: 0%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #aa6b39;
+  font-family: Trebuchet MS;
+  text-align: center;
+  margin: 5px;
+  padding: 0%;
 }
-
-.Body h1:hover {
-    animation: textglow 6s infinite;
-}
-@keyframes textglow {
-    50% {text-shadow: 2px 2px 2px #6600cc;}
-}
-
 /* Section Text */
 .Body p1 {
-    display: block;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111909;
-    text-align: center;
-    padding: 0% 10%;
+  display: block;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 0% 10%;
 }
-
 /* Projects Heading */
 .Body h2 {
-    font-size: 40px;
-    font-weight: bolder;
-	color: #000000;
-	font-family: Trebuchet MS;
-	text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 /* Projects Text */
 .Body p2 {
-    font-size: 17px;
-    display: block;
-    color: #000000;
-	font-family: Georgia;
-    line-height: 20px;
+  font-size: 17px;
+  display: block;
+  color: #cccccc;
+  font-family: Georgia;
+  line-height: 20px;
 }
 /* Projects Box */
 #ProjectBox {
-	background: linear-gradient(rgb(138, 237, 240), #59b2ee, rgb(205, 255, 255));
-	border: 8px double#ffffff;
-	border-radius: 10px;
-	padding: 3%;
-	margin: 2%;
+  border-radius: 1px;
+  background-color: #202020;
+  box-shadow: 2px 2px 0px 1px #888888;
+  padding: 3%;
+  margin: 2%;
 }
-
 /* Projects Slide Show */
 .mySlides {
   display: none;
@@ -219,11 +188,11 @@ a {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 15px;
+  padding: 25px;
   margin-top: -22px;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   transition: 1s ease;
   border-radius: 0px 3px 3px 0px;
   user-select: none;
@@ -235,40 +204,8 @@ a {
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #f2ffff;
+  color: #dc8809;
 }
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #000000;
-}
-.dot:hover {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 /* Images Show */
 .myImages {
   display: none;
@@ -286,7 +223,7 @@ a {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  color: #ffffff;
+  color: #cccccc;
   font-weight: bold;
   font-size: 40px;
   transition: 1s ease;
@@ -299,26 +236,44 @@ a {
   border-radius: 1px 0 0 1px;
 }
 .iprev {
-    left: 2%;
-  }
+  left: 2%;
+}
 /* On hover, add a black background color with a little bit see-through */
 .iprev:hover {
-    opacity: 60%;
-    animation: bounce2 infinite 0.8s;
+  opacity: 60%;
+  animation: bounce2 infinite 0.8s;
 }
 .inext:hover {
-    opacity: 60%;
-    animation: bounce3 infinite 0.8s;
+  opacity: 60%;
+  animation: bounce3 infinite 0.8s;
 }
 @keyframes bounce2 {
-    0%{padding-left: 0px; padding-right: 0;}
-    50%{padding-left: 15px; padding-right: 0px;}
-    100%{padding-left: 0px; padding-right: 0;}
+  0%{
+     padding-left: 0px;
+      padding-right: 0;
+ }
+  50%{
+     padding-left: 15px;
+      padding-right: 0px;
+ }
+  100%{
+     padding-left: 0px;
+      padding-right: 0;
+ }
 }
 @keyframes bounce3 {
-    0%{padding-left: 0px; padding-right: 0;}
-    50%{padding-left: 0; padding-right: 15px;}
-    100%{padding-left: 0px; padding-right: 0;}
+  0%{
+     padding-left: 0px;
+      padding-right: 0;
+ }
+  50%{
+     padding-left: 0;
+      padding-right: 15px;
+ }
+  100%{
+     padding-left: 0px;
+      padding-right: 0;
+ }
 }
 .active {
   background-color: #f2ffff;
@@ -331,130 +286,106 @@ a {
   animation-duration: 0.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+     opacity: .4
+ }
+  to {
+     opacity: 1
+ }
 }
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+     opacity: .4
+ }
+  to {
+     opacity: 1
+ }
 }
-
-/* Clubs Heading */
+/* General Heading */
 .Body h3 {
-    font-size: 40px;
-    font-weight: bolder;
-	color: #ffffff;
-    text-shadow: 0 0 2px #000000;
-	font-family: Trebuchet MS;
-	text-align: center;
-	margin: 0px;
-	padding: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
 }
-/* Clubs Text */
+/* General Text */
 .Body p3 {
-    font-size: 17px;
-    display: block;
-    color: #ffffff;
-	font-family: Georgia;
-    line-height: 20px;
-    margin: 15px;
+  font-size: 16px;
+  display: block;
+  color: #eeeeee;
+  font-family: Trebuchet MS;
+  line-height: 20px;
+  margin: 15px;
 }
 /* Club Boxes */
 #ClubCOGS {
-    background-color: #b4042c;
-    border: 10px double#ffffff;
-    border-radius: 6px;
-    width: 47%;
-    display: inline-block;
-    padding: 4% 0%;
-	margin: 2% 0%;
+  border-radius: 1px;
+  box-shadow: 2px 2px 0px 1px #888888;
+  background-color: #690017;
+  width: 47%;
+  display: inline-block;
+  padding: 4% 0%;
+  margin: 2% 0%;
 }
 #ClubBlueprint {
-    background-color: #44abfb;
-    border: 10px double#ffffff;
-    border-radius: 6px;
-    width: 47%;
-    display: inline-block;
-    padding: 4% 0%;
-	margin: 2% 0%;
+  border-radius: 1px;
+  box-shadow: 2px 2px 0px 1px #888888;
+  background-color: #003b6b;
+  width: 47%;
+  display: inline-block;
+  padding: 4% 0%;
+  margin: 2% 0%;
 }
-
+#ExperienceBilltrust {
+  border-radius: 1px;
+  background-image: linear-gradient(160deg, #3b3b6e, #149f75, #0b750b);
+  box-shadow: 2px 2px 0px 1px #888888;
+  padding: 3%;
+  margin: 2%;
+  text-align: center;
+}
 /* Hobbies Boxes */
-#HobbyPlant {
-    background-image: linear-gradient(50deg, rgb(46, 158, 12) 75%, rgba(0,0,0,0) 25%),  url('images/basilplant.jpg');
-    border: 5px ridge#ffffff;
-    border-radius: 6px;
-    width: 30%;
-    display: inline-block;
-    padding: 4% 0%;
-	margin: 2% 0%;
+#HobbyPhysics {
+  border-radius: 1px;
+  background-color: #202020;
+  box-shadow: 2px 2px 0px 1px #888888;
+  padding: 3%;
+  margin: 2%;
+  text-align: center;
 }
-#HobbyGame {
-    background-image: linear-gradient(50deg, rgb(81, 177, 169) 75%, rgba(0,0,0,0) 25%),  url('images/gaming.jpg');
-    border: 5px ridge#ffffff;
-    border-radius: 6px;
-    width: 30%;
-    display: inline-block;
-    padding: 4% 0%;
-	margin: 2% 0%;
-}
-#HobbyBook {
-    background-image: linear-gradient(50deg, rgb(139, 116, 148) 75%, rgba(0,0,0,0) 25%),  url('images/bookpages.jpg');
-    border: 5px ridge#ffffff;
-    border-radius: 6px;
-    width: 30%;
-    display: inline-block;
-    padding: 4% 0%;
-	margin: 2% 1%;
-}
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 560px) {
-  .prev, .next {font-size: 11px}
-  .nav-link {font-size: 8px}
-  .Body p2 {font-size: 12px}
+  .prev, .next {
+     font-size: 11px
+ }
+  .nav-link {
+     font-size: 10px
+ }
+  .Body p2 {
+     font-size: 12px
+ }
 }
-
-.footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: #ffffff;
-   text-align: center;
-}
-
 /* On smaller screens, put club boxes on different rows */
 @media only screen and (max-width: 800px) {
-    #ClubCOGS {
-        width: 90%;
-        margin: 2px 0%;
-        padding: 2% 0%;
-    }
-    #ClubBlueprint {
-        width: 90%;
-        margin: 2px 0%;
-        padding: 2% 0%;
-    }
+  #ClubCOGS {
+      width: 90%;
+      margin: 2px 0%;
+      padding: 2% 0%;
+ }
+  #ClubBlueprint {
+      width: 90%;
+      margin: 2px 0%;
+      padding: 2% 0%;
+ }
 }
-
-/* On smaller screens, put hobby boxes on different rows */
-@media only screen and (max-width: 1000px) {
-    #HobbyPlant {
-        background-image: linear-gradient(25deg, rgb(46, 158, 12) 75%, rgba(0,0,0,0) 25%),  url('images/basilplant.jpg');
-        width: 90%;
-        margin: 2px 0%;
-        padding: 2% 0%;
-    }
-    #HobbyGame {
-        background-image: linear-gradient(25deg, rgb(81, 177, 169) 75%, rgba(0,0,0,0) 25%),  url('images/gaming.jpg');
-        width: 90%;
-        margin: 2px 0%;
-        padding: 2% 0%;
-    }
-    #HobbyBook {
-        background-image: linear-gradient(25deg, rgb(139, 116, 148) 75%, rgba(0,0,0,0) 25%),  url('images/bookpages.jpg');
-        width: 90%;
-        margin: 2px 0%;
-        padding: 2% 0%;
-    }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-family: Trebuchet MS;
 }

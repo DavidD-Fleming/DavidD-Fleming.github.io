@@ -16,16 +16,10 @@ function iterateImage(n) {
     showImages(imageIndex += n);
 }
 
-// jumps to project selected by dots
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
 // shows current slide and updates dots
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
     if (n > slides.length) {
         slideIndex = slides.length
     }
@@ -35,17 +29,13 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
 }
 
 // shows current image
 function showImages(n) {
-    var i;
-    var images = document.getElementsByClassName("myImages");
+    let i;
+    let images = document.getElementsByClassName("myImages");
     if (n > images.length) {
         imageIndex = images.length
     }
