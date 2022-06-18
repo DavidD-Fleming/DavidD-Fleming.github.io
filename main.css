@@ -11,7 +11,7 @@ body {
 
 .TotalBackground {
     height: 100%;
-    background: linear-gradient(80deg, rgb(33, 124, 126) 30%, rgb(226, 226, 226) 80%);
+    background: linear-gradient(90deg, rgb(65, 158, 160), rgb(134, 194, 134), rgb(77, 179, 131));
 }
 
 /* Navigation Bar Features */
@@ -87,6 +87,7 @@ body {
 /* Social Media Icons? */
 .socialbuttons {
     padding-top: 20px;
+    padding: 5px;
 }
 /* Club Icons */
 .clubimg {
@@ -196,16 +197,11 @@ a {
 }
 /* Projects Box */
 #ProjectBox {
-	background-color: #eeefee;
+	background: linear-gradient(rgb(138, 237, 240), #59b2ee, rgb(205, 255, 255));
 	border: 8px double#ffffff;
 	border-radius: 10px;
 	padding: 3%;
 	margin: 2%;
-	animation: boxshimmer 3s;
-}
-@keyframes boxshimmer {
-    0% {box-shadow: 4px 4px 4px #5a79a5}
-	100% {box-shadow: 0px 0px 0px #5a79a5}
 }
 
 /* Projects Slide Show */
@@ -348,6 +344,7 @@ a {
     font-size: 40px;
     font-weight: bolder;
 	color: #ffffff;
+    text-shadow: 0 0 2px #000000;
 	font-family: Trebuchet MS;
 	text-align: center;
 	margin: 0px;
@@ -384,8 +381,8 @@ a {
 
 /* Hobbies Boxes */
 #HobbyPlant {
-    background-color: #4fa64f;
-    border: 10px double#ffffff;
+    background-image: linear-gradient(50deg, rgb(46, 158, 12) 75%, rgba(0,0,0,0) 25%),  url('images/basilplant.jpg');
+    border: 5px ridge#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
@@ -393,8 +390,8 @@ a {
 	margin: 2% 0%;
 }
 #HobbyGame {
-    background-color: #e6b95f;
-    border: 10px double#ffffff;
+    background-image: linear-gradient(50deg, rgb(81, 177, 169) 75%, rgba(0,0,0,0) 25%),  url('images/gaming.jpg');
+    border: 5px ridge#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
@@ -402,13 +399,13 @@ a {
 	margin: 2% 0%;
 }
 #HobbyBook {
-    background-color: #c38452;
-    border: 10px double#ffffff;
+    background-image: linear-gradient(50deg, rgb(139, 116, 148) 75%, rgba(0,0,0,0) 25%),  url('images/bookpages.jpg');
+    border: 5px ridge#ffffff;
     border-radius: 6px;
     width: 30%;
     display: inline-block;
     padding: 4% 0%;
-	margin: 2% 0%;
+	margin: 2% 1%;
 }
 
 /* On smaller screens, decrease text size */
@@ -443,16 +440,19 @@ a {
 /* On smaller screens, put hobby boxes on different rows */
 @media only screen and (max-width: 1000px) {
     #HobbyPlant {
+        background-image: linear-gradient(25deg, rgb(46, 158, 12) 75%, rgba(0,0,0,0) 25%),  url('images/basilplant.jpg');
         width: 90%;
         margin: 2px 0%;
         padding: 2% 0%;
     }
     #HobbyGame {
+        background-image: linear-gradient(25deg, rgb(81, 177, 169) 75%, rgba(0,0,0,0) 25%),  url('images/gaming.jpg');
         width: 90%;
         margin: 2px 0%;
         padding: 2% 0%;
     }
     #HobbyBook {
+        background-image: linear-gradient(25deg, rgb(139, 116, 148) 75%, rgba(0,0,0,0) 25%),  url('images/bookpages.jpg');
         width: 90%;
         margin: 2px 0%;
         padding: 2% 0%;
