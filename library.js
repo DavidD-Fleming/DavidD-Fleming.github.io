@@ -10,7 +10,10 @@ var tempLibrary = [ ["Babel", "R.F. Kuang"],
                 ["Sofia Petrovna", "Lydia Chukovskaya"],
                 ["In Cold Blood", "Truman Capote"],
                 ["Alex's Adventures in Numberland", "Alex Bellos"],
-                ["In a Dark, Dark Wood", "Ruth Ware"]];
+                ["In a Dark, Dark Wood", "Ruth Ware"],
+                ["Blood of Elves", "Andrzej Sapkowski"],
+                ["Designing Data-Intensive Applications", "Martin Kleppmann"],
+                ["Cloud Cuckoo Land", "Anthony Doerr"]];
 
 populateLibrary();
 
